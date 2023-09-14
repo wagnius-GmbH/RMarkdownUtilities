@@ -2,7 +2,7 @@
 % Please edit documentation in R/Rmarkdown_utiilities.R
 \name{r_toc_for_Rmd}
 \alias{r_toc_for_Rmd}
-\title{Automatically creates a table of contents for ".Rmd" file}
+\title{Automatically creates a table of contents for a .Rmd file}
 \usage{
 r_toc_for_Rmd(
   c_Rmd,
@@ -10,7 +10,8 @@ r_toc_for_Rmd(
   create_nb = TRUE,
   create_top_link = TRUE,
   nb_front = TRUE,
-  set_first_heading_level = FALSE
+  set_first_heading_level = FALSE,
+  pagebreak_level = "non"
 )
 }
 \arguments{
@@ -24,25 +25,24 @@ r_toc_for_Rmd(
 
 \item{nb_front}{boolean to have the numbering in front of each heading.}
 
-\item{set_first_heading_level}{boolean to set first found heading level to heading level one. If highest order heading was e.g. Heading 2 it will be changed to heading 1.}
+\item{set_first_heading_level}{set first found heading level to heading 1}
+
+\item{pagebreak_level}{automatically add page breaks before new heading. Set the level to insert page breaks to e.g. c("non","1","2","3","4","5","6")}
 }
 \value{
 .Rmd file string
 }
 \description{
 Scans documents for headings (#) and creates a table of contents (hyper linked). The returned string can directly be written as .Rmd file.
-All code section will be excluded for the (#) search.It is very similar to the following setting: output:
-html_document:
-  toc: true
-  number_sections: true
+All code section will be excluded for the (#) search.
 }
 \details{
-Pass a R markdown .Rmd file string as first function argument. Read a file via \code{readLines("fileName.Rmd")}.
+The function argument is a string of a R markdown .Rmd file which can be read via \code{readLines("fileName.Rmd")}.
 }
 \examples{
 print(tbl_of_contents.Rmd)
 c_rmd <- r_toc_for_Rmd(tbl_of_contents.Rmd, create_nb = FALSE)
-print(c_rmd)
+c_rmd
 c_rmd <- r_toc_for_Rmd(tbl_of_contents.Rmd,toc_heading_string = "Inhaltsverzeichnis", create_nb = TRUE)
-print(c_rmd)
+c_rmd
 }
