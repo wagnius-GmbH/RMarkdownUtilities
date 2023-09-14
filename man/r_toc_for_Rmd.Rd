@@ -31,10 +31,13 @@ r_toc_for_Rmd(
 }
 \description{
 Scans documents for headings (#) and creates a table of contents (hyper linked). The returned string can directly be written as .Rmd file.
-All code section will be excluded for the (#) search.
+All code section will be excluded for the (#) search.It is very similar to the following setting: output:
+html_document:
+  toc: true
+  number_sections: true
 }
 \details{
-As the function argument pass a R markdown .Rmd file string which can be read via \code{readLines("fileName.Rmd")}.
+Pass a R markdown .Rmd file string as first function argument. Read a file via \code{readLines("fileName.Rmd")}.
 }
 \examples{
 print(tbl_of_contents.Rmd)

@@ -3,9 +3,12 @@
 #' @name r_toc_for_Rmd
 #' @description
 #' Scans documents for headings (#) and creates a table of contents (hyper linked). The returned string can directly be written as .Rmd file.
-#' All code section will be excluded for the (#) search.
+#' All code section will be excluded for the (#) search.It is very similar to the following setting: output:
+#' html_document:
+#'   toc: true
+#'   number_sections: true
 #' @details
-#' As the function argument pass a R markdown .Rmd file string which can be read via \code{readLines("fileName.Rmd")}.
+#' Pass a R markdown .Rmd file string as first function argument. Read a file via \code{readLines("fileName.Rmd")}.
 #' @param toc_heading_string title string for TOC, e.g "Inhaltsverzeichnis", default is "Table of contents".
 #' @param c_Rmd Rmd file string
 #' @param create_nb boolean to enable numbering for each heading.
@@ -20,7 +23,6 @@
 #' c_rmd <- r_toc_for_Rmd(tbl_of_contents.Rmd,toc_heading_string = "Inhaltsverzeichnis", create_nb = TRUE)
 #' c_rmd
 #' @export
-
 
 r_toc_for_Rmd <- function(
     c_Rmd,

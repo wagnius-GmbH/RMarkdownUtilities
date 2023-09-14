@@ -3,7 +3,9 @@ title: "Rmarkdown input"
 author: "Florian Wagner"
 date: "2023-09-05"
 output:
-    html_document: default
+    html_document:
+      toc: true
+      number_sections: true
     word_document: default
     pdf_document: default
 ---
