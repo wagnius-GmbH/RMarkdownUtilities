@@ -330,7 +330,6 @@ create_df <- function(c_Rmd) {
   df_data$is.heading <- ifelse(df_data$code_sections, FALSE, df_data$is.heading)
 
   # Store headings
-  # df_data$c_add <- rep("",nrow(df_data))
   df_data$`#` <- stringr::str_detect(df_data$c_Rmd, "^#\\s") |> ifelse(1, 0)
   df_data$`##` <-  stringr::str_detect(df_data$c_Rmd, "^##\\s") |> ifelse(1, 0)
   df_data$`###` <- stringr::str_detect(df_data$c_Rmd, "^###\\s") |> ifelse(1, 0)
