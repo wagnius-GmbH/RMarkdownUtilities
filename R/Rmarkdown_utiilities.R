@@ -19,9 +19,9 @@
 #' @examples
 #' print(tbl_of_contents.Rmd)
 #' c_rmd <- r_toc_for_Rmd(tbl_of_contents.Rmd, create_nb = FALSE)
-#' c_rmd
+#' print(c_rmd)
 #' c_rmd <- r_toc_for_Rmd(tbl_of_contents.Rmd,toc_heading_string = "Inhaltsverzeichnis", create_nb = TRUE)
-#' c_rmd
+#' print(c_rmd)
 #' @export
 
 r_toc_for_Rmd <- function(

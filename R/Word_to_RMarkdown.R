@@ -1,6 +1,6 @@
 ###################################################################
 #' Automatically creates a table of contents for a .Rmd file
-#' @name create_Rmd
+#' @name create_Rmd_from_word
 #' @description
 #' Scans documents for headings (#) and creates a table of contents (hyper linked). The returned string can directly be written as .Rmd file.
 #' All code section will be excluded for the (#) search.
@@ -11,7 +11,7 @@
 #' @return .Rmd file string
 #' @export
 
-create_Rmd <- function(doc, toc = TRUE) {
+create_Rmd_from_word <- function(doc, toc = TRUE) {
   c_table_of_content <- list()
   c_md <- ""
   first_paragraph <- TRUE

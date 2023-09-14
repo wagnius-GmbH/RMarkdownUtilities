@@ -5,7 +5,7 @@
 \alias{tbl_of_contents.Rmd}
 \title{Data for table of contents for a .Rmd file}
 \format{
-An object of class \code{character} of length 41.
+An object of class \code{character} of length 40.
 }
 \usage{
 tbl_of_contents.Rmd

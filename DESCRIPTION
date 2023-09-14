@@ -12,5 +12,7 @@ RoxygenNote: 7.2.3
 Depends: 
     R (>= 4.2.0)
 Imports: 
-    dplyr,
-    stringr
+  dplyr,
+  stringr
+Suggest:
+  officer
