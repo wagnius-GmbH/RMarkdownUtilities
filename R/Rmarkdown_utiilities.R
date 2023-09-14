@@ -14,7 +14,7 @@
 #' @param create_nb boolean to enable numbering for each heading.
 #' @param nb_front boolean to have the numbering in front of each heading.
 #' @param create_top_link boolean to create link below each heading to jump back to the table of contents.
-#' @param set_first_heading_level set first found heading level to heading 1
+#' @param set_first_heading_level boolean to set first found heading level to heading level one. If highest order heading was e.g. Heading 2 it will be changed to heading 1.
 #' @return .Rmd file string
 #' @examples
 #' print(tbl_of_contents.Rmd)

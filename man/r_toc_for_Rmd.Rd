@@ -24,7 +24,7 @@ r_toc_for_Rmd(
 
 \item{nb_front}{boolean to have the numbering in front of each heading.}
 
-\item{set_first_heading_level}{set first found heading level to heading 1}
+\item{set_first_heading_level}{boolean to set first found heading level to heading level one. If highest order heading was e.g. Heading 2 it will be changed to heading 1.}
 }
 \value{
 .Rmd file string
