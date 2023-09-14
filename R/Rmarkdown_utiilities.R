@@ -22,7 +22,12 @@
 #' @export
 
 
-r_toc_for_Rmd <- function(c_Rmd,   toc_heading_string = "Table of Contents" ,create_nb = TRUE, create_top_link = TRUE , nb_front = TRUE, set_first_heading_level = FALSE) {
+r_toc_for_Rmd <- function(
+    c_Rmd,
+    toc_heading_string = "Table of Contents" ,
+    create_nb = TRUE, create_top_link = TRUE , nb_front = TRUE, set_first_heading_level = FALSE
+    )
+  {
   ##########################################################################
   # create dataframe to work with
   p <- "^```"
