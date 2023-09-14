@@ -1,5 +1,5 @@
 ###################################################################
-#' Automatically creates a table of contents for a .Rmd file
+#' Automatically creates a table of contents for ".Rmd" file
 #' @name r_toc_for_Rmd
 #' @description
 #' Scans documents for headings (#) and creates a table of contents (hyper linked). The returned string can directly be written as .Rmd file.

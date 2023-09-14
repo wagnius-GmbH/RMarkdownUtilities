@@ -2,7 +2,7 @@
 % Please edit documentation in R/Rmarkdown_utiilities.R
 \name{r_toc_for_Rmd}
 \alias{r_toc_for_Rmd}
-\title{Automatically creates a table of contents for a .Rmd file}
+\title{Automatically creates a table of contents for ".Rmd" file}
 \usage{
 r_toc_for_Rmd(
   c_Rmd,
