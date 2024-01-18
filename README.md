@@ -2,6 +2,9 @@
 ## Create a Markdown file from word files (.docx) 
 
 -   Including the structure of the file (Heading and Title)
+```
+install.packages("officer")
+```
 
 ## Create automatically table of contents for Markdown files
 
