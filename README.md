@@ -2,6 +2,8 @@
 ## Create a Markdown file from word files (.docx) 
 Including the structure of the file (Heading and Title)
 
+## Installation 
+Easy way to install:
 ```
 devtools::install_git("https://github.com/wagnius-GmbH/RMarkdownUtilities",   build_manual = TRUE,
                       build_vignettes = TRUE)
@@ -14,6 +16,8 @@ You need to install the officer package to read word files.
 ```
 install.packages("officer")
 ```
+
+## Testing
 Now you can use the following code to convert word files to RMarkdown files
 ```
 source("R/RMarkdown_from_word_summary.R")
