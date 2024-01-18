@@ -1,7 +1,13 @@
 # RMarkdownUtilities
 ## Create a Markdown file from word files (.docx) 
+Including the structure of the file (Heading and Title)
 
--   Including the structure of the file (Heading and Title)
+```
+devtools::install_git("https://github.com/wagnius-GmbH/RMarkdownUtilities",   build_manual = TRUE,
+                      build_vignettes = TRUE)
+
+```
+
 
 You need to install the officer package to read word files.
 
